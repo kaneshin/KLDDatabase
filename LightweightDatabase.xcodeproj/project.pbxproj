@@ -1,0 +1,478 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7910887B18CB5E410068D4C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7910887A18CB5E410068D4C9 /* Foundation.framework */; };
+		7910887D18CB5E410068D4C9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7910887C18CB5E410068D4C9 /* CoreGraphics.framework */; };
+		7910887F18CB5E410068D4C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7910887E18CB5E410068D4C9 /* UIKit.framework */; };
+		7910889A18CB5E410068D4C9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7910889918CB5E410068D4C9 /* XCTest.framework */; };
+		7910889B18CB5E410068D4C9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7910887A18CB5E410068D4C9 /* Foundation.framework */; };
+		7910889C18CB5E410068D4C9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7910887E18CB5E410068D4C9 /* UIKit.framework */; };
+		791088A418CB5E410068D4C9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 791088A218CB5E410068D4C9 /* InfoPlist.strings */; };
+		791088A618CB5E410068D4C9 /* LightweightDatabaseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 791088A518CB5E410068D4C9 /* LightweightDatabaseTests.m */; };
+		791088BD18CB5E8D0068D4C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 791088B118CB5E8D0068D4C9 /* Main.storyboard */; };
+		791088BF18CB5E8D0068D4C9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 791088B518CB5E8D0068D4C9 /* Images.xcassets */; };
+		791088C018CB5E8D0068D4C9 /* KLDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 791088B718CB5E8D0068D4C9 /* KLDAppDelegate.m */; };
+		791088C118CB5E8D0068D4C9 /* KLDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791088B918CB5E8D0068D4C9 /* KLDViewController.m */; };
+		791088C318CB5E8D0068D4C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 791088BC18CB5E8D0068D4C9 /* main.m */; };
+		791088C618CB5F7A0068D4C9 /* KLDDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 791088C518CB5F7A0068D4C9 /* KLDDatabase.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7910889D18CB5E410068D4C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7910886F18CB5E410068D4C9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7910887618CB5E410068D4C9;
+			remoteInfo = LightweightDatabase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7910887718CB5E410068D4C9 /* LightweightDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightweightDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7910887A18CB5E410068D4C9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7910887C18CB5E410068D4C9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7910887E18CB5E410068D4C9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7910889818CB5E410068D4C9 /* LightweightDatabaseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LightweightDatabaseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7910889918CB5E410068D4C9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		791088A118CB5E410068D4C9 /* LightweightDatabaseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LightweightDatabaseTests-Info.plist"; sourceTree = "<group>"; };
+		791088A318CB5E410068D4C9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		791088A518CB5E410068D4C9 /* LightweightDatabaseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightweightDatabaseTests.m; sourceTree = "<group>"; };
+		791088B218CB5E8D0068D4C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		791088B518CB5E8D0068D4C9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		791088B618CB5E8D0068D4C9 /* KLDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDAppDelegate.h; sourceTree = "<group>"; };
+		791088B718CB5E8D0068D4C9 /* KLDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLDAppDelegate.m; sourceTree = "<group>"; };
+		791088B818CB5E8D0068D4C9 /* KLDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDViewController.h; sourceTree = "<group>"; };
+		791088B918CB5E8D0068D4C9 /* KLDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLDViewController.m; sourceTree = "<group>"; };
+		791088BA18CB5E8D0068D4C9 /* LightweightDatabase-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "LightweightDatabase-Info.plist"; sourceTree = "<group>"; };
+		791088BB18CB5E8D0068D4C9 /* LightweightDatabase-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LightweightDatabase-Prefix.pch"; sourceTree = "<group>"; };
+		791088BC18CB5E8D0068D4C9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		791088C418CB5F7A0068D4C9 /* KLDDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDDatabase.h; sourceTree = "<group>"; };
+		791088C518CB5F7A0068D4C9 /* KLDDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLDDatabase.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7910887418CB5E410068D4C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7910887D18CB5E410068D4C9 /* CoreGraphics.framework in Frameworks */,
+				7910887F18CB5E410068D4C9 /* UIKit.framework in Frameworks */,
+				7910887B18CB5E410068D4C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7910889518CB5E410068D4C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7910889A18CB5E410068D4C9 /* XCTest.framework in Frameworks */,
+				7910889C18CB5E410068D4C9 /* UIKit.framework in Frameworks */,
+				7910889B18CB5E410068D4C9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7910886E18CB5E410068D4C9 = {
+			isa = PBXGroup;
+			children = (
+				791088AF18CB5E8D0068D4C9 /* LightweightDatabase */,
+				791088B018CB5E8D0068D4C9 /* LightweightDatabase-example */,
+				7910889F18CB5E410068D4C9 /* LightweightDatabaseTests */,
+				7910887918CB5E410068D4C9 /* Frameworks */,
+				7910887818CB5E410068D4C9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7910887818CB5E410068D4C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7910887718CB5E410068D4C9 /* LightweightDatabase.app */,
+				7910889818CB5E410068D4C9 /* LightweightDatabaseTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7910887918CB5E410068D4C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7910887A18CB5E410068D4C9 /* Foundation.framework */,
+				7910887C18CB5E410068D4C9 /* CoreGraphics.framework */,
+				7910887E18CB5E410068D4C9 /* UIKit.framework */,
+				7910889918CB5E410068D4C9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7910889F18CB5E410068D4C9 /* LightweightDatabaseTests */ = {
+			isa = PBXGroup;
+			children = (
+				791088A518CB5E410068D4C9 /* LightweightDatabaseTests.m */,
+				791088A018CB5E410068D4C9 /* Supporting Files */,
+			);
+			path = LightweightDatabaseTests;
+			sourceTree = "<group>";
+		};
+		791088A018CB5E410068D4C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				791088A118CB5E410068D4C9 /* LightweightDatabaseTests-Info.plist */,
+				791088A218CB5E410068D4C9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		791088AF18CB5E8D0068D4C9 /* LightweightDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				791088C418CB5F7A0068D4C9 /* KLDDatabase.h */,
+				791088C518CB5F7A0068D4C9 /* KLDDatabase.m */,
+			);
+			path = LightweightDatabase;
+			sourceTree = "<group>";
+		};
+		791088B018CB5E8D0068D4C9 /* LightweightDatabase-example */ = {
+			isa = PBXGroup;
+			children = (
+				791088B618CB5E8D0068D4C9 /* KLDAppDelegate.h */,
+				791088B718CB5E8D0068D4C9 /* KLDAppDelegate.m */,
+				791088B818CB5E8D0068D4C9 /* KLDViewController.h */,
+				791088B918CB5E8D0068D4C9 /* KLDViewController.m */,
+				791088C718CB5FC10068D4C9 /* Supporting Files */,
+				791088B118CB5E8D0068D4C9 /* Main.storyboard */,
+				791088B518CB5E8D0068D4C9 /* Images.xcassets */,
+			);
+			path = "LightweightDatabase-example";
+			sourceTree = "<group>";
+		};
+		791088C718CB5FC10068D4C9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				791088BA18CB5E8D0068D4C9 /* LightweightDatabase-Info.plist */,
+				791088BB18CB5E8D0068D4C9 /* LightweightDatabase-Prefix.pch */,
+				791088BC18CB5E8D0068D4C9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7910887618CB5E410068D4C9 /* LightweightDatabase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 791088A918CB5E410068D4C9 /* Build configuration list for PBXNativeTarget "LightweightDatabase" */;
+			buildPhases = (
+				7910887318CB5E410068D4C9 /* Sources */,
+				7910887418CB5E410068D4C9 /* Frameworks */,
+				7910887518CB5E410068D4C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightweightDatabase;
+			productName = LightweightDatabase;
+			productReference = 7910887718CB5E410068D4C9 /* LightweightDatabase.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7910889718CB5E410068D4C9 /* LightweightDatabaseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 791088AC18CB5E410068D4C9 /* Build configuration list for PBXNativeTarget "LightweightDatabaseTests" */;
+			buildPhases = (
+				7910889418CB5E410068D4C9 /* Sources */,
+				7910889518CB5E410068D4C9 /* Frameworks */,
+				7910889618CB5E410068D4C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7910889E18CB5E410068D4C9 /* PBXTargetDependency */,
+			);
+			name = LightweightDatabaseTests;
+			productName = LightweightDatabaseTests;
+			productReference = 7910889818CB5E410068D4C9 /* LightweightDatabaseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7910886F18CB5E410068D4C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KLD;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = kaneshinth.com;
+				TargetAttributes = {
+					7910889718CB5E410068D4C9 = {
+						TestTargetID = 7910887618CB5E410068D4C9;
+					};
+				};
+			};
+			buildConfigurationList = 7910887218CB5E410068D4C9 /* Build configuration list for PBXProject "LightweightDatabase" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7910886E18CB5E410068D4C9;
+			productRefGroup = 7910887818CB5E410068D4C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7910887618CB5E410068D4C9 /* LightweightDatabase */,
+				7910889718CB5E410068D4C9 /* LightweightDatabaseTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7910887518CB5E410068D4C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				791088BF18CB5E8D0068D4C9 /* Images.xcassets in Resources */,
+				791088BD18CB5E8D0068D4C9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7910889618CB5E410068D4C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				791088A418CB5E410068D4C9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7910887318CB5E410068D4C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				791088C618CB5F7A0068D4C9 /* KLDDatabase.m in Sources */,
+				791088C118CB5E8D0068D4C9 /* KLDViewController.m in Sources */,
+				791088C318CB5E8D0068D4C9 /* main.m in Sources */,
+				791088C018CB5E8D0068D4C9 /* KLDAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7910889418CB5E410068D4C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				791088A618CB5E410068D4C9 /* LightweightDatabaseTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7910889E18CB5E410068D4C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7910887618CB5E410068D4C9 /* LightweightDatabase */;
+			targetProxy = 7910889D18CB5E410068D4C9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		791088A218CB5E410068D4C9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				791088A318CB5E410068D4C9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		791088B118CB5E8D0068D4C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				791088B218CB5E8D0068D4C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		791088A718CB5E410068D4C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		791088A818CB5E410068D4C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		791088AA18CB5E410068D4C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LightweightDatabase-example/LightweightDatabase-Prefix.pch";
+				INFOPLIST_FILE = "LightweightDatabase-example/LightweightDatabase-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		791088AB18CB5E410068D4C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LightweightDatabase-example/LightweightDatabase-Prefix.pch";
+				INFOPLIST_FILE = "LightweightDatabase-example/LightweightDatabase-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		791088AD18CB5E410068D4C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LightweightDatabase.app/LightweightDatabase";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LightweightDatabase/LightweightDatabase-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LightweightDatabaseTests/LightweightDatabaseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		791088AE18CB5E410068D4C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LightweightDatabase.app/LightweightDatabase";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LightweightDatabase/LightweightDatabase-Prefix.pch";
+				INFOPLIST_FILE = "LightweightDatabaseTests/LightweightDatabaseTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7910887218CB5E410068D4C9 /* Build configuration list for PBXProject "LightweightDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				791088A718CB5E410068D4C9 /* Debug */,
+				791088A818CB5E410068D4C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		791088A918CB5E410068D4C9 /* Build configuration list for PBXNativeTarget "LightweightDatabase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				791088AA18CB5E410068D4C9 /* Debug */,
+				791088AB18CB5E410068D4C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		791088AC18CB5E410068D4C9 /* Build configuration list for PBXNativeTarget "LightweightDatabaseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				791088AD18CB5E410068D4C9 /* Debug */,
+				791088AE18CB5E410068D4C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7910886F18CB5E410068D4C9 /* Project object */;
+}
