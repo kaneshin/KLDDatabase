@@ -1,4 +1,4 @@
-// KLDDatabase.h
+// KLDResult.h
 //
 // Copyright (c) 2014 Shintaro Kaneko (http://kaneshinth.com)
 //
@@ -22,29 +22,11 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NS_ENUM(NSUInteger, KLDSQLiteOpenFlags) {
-    KLDSQLiteOpenFlagReadonly   = 1 << 0,
-    KLDSQLiteOpenFlagReadWrite  = 1 << 1,
-    KLDSQLiteOpenFlagCreate     = 1 << 2,
-};
+@interface KLDResult : NSObject
+@property (readonly, nonatomic, strong) NSDictionary *record;
+@property (readonly, nonatomic, strong) NSArray *namesOfColumn;
 
-@class KLDResultSet;
-
-@interface KLDDatabase : NSObject
-
-+ (instancetype)databaseWithName:(NSString *)name;
-- (instancetype)initWithName:(NSString *)name;
-
-- (BOOL)open;
-- (BOOL)openWithFlags:(KLDSQLiteOpenFlags)flags;
-
-- (BOOL)close;
-- (BOOL)remove;
-
-- (BOOL)isOpened;
-- (BOOL)isReadonly;
-- (BOOL)isWritable;
-
-- (KLDResultSet *)query:(NSString *)sql;
-
++ (instancetype)resultWithRecord:(NSDictionary *)record;
+- (instancetype)initWithRecord:(NSDictionary *)record;
+- (id)objectForKey:(id)aKey;
 @end

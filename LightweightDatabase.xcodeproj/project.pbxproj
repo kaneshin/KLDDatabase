@@ -21,6 +21,11 @@
 		791088C118CB5E8D0068D4C9 /* KLDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 791088B918CB5E8D0068D4C9 /* KLDViewController.m */; };
 		791088C318CB5E8D0068D4C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 791088BC18CB5E8D0068D4C9 /* main.m */; };
 		791088C618CB5F7A0068D4C9 /* KLDDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 791088C518CB5F7A0068D4C9 /* KLDDatabase.m */; };
+		791088C918CB62E20068D4C9 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 791088C818CB62E20068D4C9 /* libsqlite3.dylib */; };
+		791088CB18CB6DB20068D4C9 /* master.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 791088CA18CB6DB20068D4C9 /* master.sqlite */; };
+		791088D418CB853E0068D4C9 /* KLDResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 791088D318CB853E0068D4C9 /* KLDResult.m */; };
+		791088D718CB88B50068D4C9 /* KLDResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 791088D618CB88B50068D4C9 /* KLDResultSet.m */; };
+		79481E5E18CC608500353AC2 /* KLDActiveRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 79481E5D18CC608500353AC2 /* KLDActiveRecord.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,14 @@
 		791088BC18CB5E8D0068D4C9 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		791088C418CB5F7A0068D4C9 /* KLDDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDDatabase.h; sourceTree = "<group>"; };
 		791088C518CB5F7A0068D4C9 /* KLDDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLDDatabase.m; sourceTree = "<group>"; };
+		791088C818CB62E20068D4C9 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		791088CA18CB6DB20068D4C9 /* master.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = master.sqlite; sourceTree = "<group>"; };
+		791088D218CB853E0068D4C9 /* KLDResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDResult.h; sourceTree = "<group>"; };
+		791088D318CB853E0068D4C9 /* KLDResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLDResult.m; sourceTree = "<group>"; };
+		791088D518CB88B50068D4C9 /* KLDResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDResultSet.h; sourceTree = "<group>"; };
+		791088D618CB88B50068D4C9 /* KLDResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLDResultSet.m; sourceTree = "<group>"; };
+		79481E5C18CC608500353AC2 /* KLDActiveRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLDActiveRecord.h; sourceTree = "<group>"; };
+		79481E5D18CC608500353AC2 /* KLDActiveRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLDActiveRecord.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791088C918CB62E20068D4C9 /* libsqlite3.dylib in Frameworks */,
 				7910887D18CB5E410068D4C9 /* CoreGraphics.framework in Frameworks */,
 				7910887F18CB5E410068D4C9 /* UIKit.framework in Frameworks */,
 				7910887B18CB5E410068D4C9 /* Foundation.framework in Frameworks */,
@@ -103,6 +117,7 @@
 		7910887918CB5E410068D4C9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				791088C818CB62E20068D4C9 /* libsqlite3.dylib */,
 				7910887A18CB5E410068D4C9 /* Foundation.framework */,
 				7910887C18CB5E410068D4C9 /* CoreGraphics.framework */,
 				7910887E18CB5E410068D4C9 /* UIKit.framework */,
@@ -134,6 +149,12 @@
 			children = (
 				791088C418CB5F7A0068D4C9 /* KLDDatabase.h */,
 				791088C518CB5F7A0068D4C9 /* KLDDatabase.m */,
+				791088D218CB853E0068D4C9 /* KLDResult.h */,
+				791088D318CB853E0068D4C9 /* KLDResult.m */,
+				791088D518CB88B50068D4C9 /* KLDResultSet.h */,
+				791088D618CB88B50068D4C9 /* KLDResultSet.m */,
+				79481E5C18CC608500353AC2 /* KLDActiveRecord.h */,
+				79481E5D18CC608500353AC2 /* KLDActiveRecord.m */,
 			);
 			path = LightweightDatabase;
 			sourceTree = "<group>";
@@ -141,6 +162,7 @@
 		791088B018CB5E8D0068D4C9 /* LightweightDatabase-example */ = {
 			isa = PBXGroup;
 			children = (
+				791088CA18CB6DB20068D4C9 /* master.sqlite */,
 				791088B618CB5E8D0068D4C9 /* KLDAppDelegate.h */,
 				791088B718CB5E8D0068D4C9 /* KLDAppDelegate.m */,
 				791088B818CB5E8D0068D4C9 /* KLDViewController.h */,
@@ -239,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				791088CB18CB6DB20068D4C9 /* master.sqlite in Resources */,
 				791088BF18CB5E8D0068D4C9 /* Images.xcassets in Resources */,
 				791088BD18CB5E8D0068D4C9 /* Main.storyboard in Resources */,
 			);
@@ -262,7 +285,10 @@
 				791088C618CB5F7A0068D4C9 /* KLDDatabase.m in Sources */,
 				791088C118CB5E8D0068D4C9 /* KLDViewController.m in Sources */,
 				791088C318CB5E8D0068D4C9 /* main.m in Sources */,
+				79481E5E18CC608500353AC2 /* KLDActiveRecord.m in Sources */,
+				791088D718CB88B50068D4C9 /* KLDResultSet.m in Sources */,
 				791088C018CB5E8D0068D4C9 /* KLDAppDelegate.m in Sources */,
+				791088D418CB853E0068D4C9 /* KLDResult.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +489,7 @@
 				791088AB18CB5E410068D4C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		791088AC18CB5E410068D4C9 /* Build configuration list for PBXNativeTarget "LightweightDatabaseTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +498,7 @@
 				791088AE18CB5E410068D4C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

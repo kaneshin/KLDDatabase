@@ -1,4 +1,4 @@
-// KLDDatabase.h
+// KLDResult.m
 //
 // Copyright (c) 2014 Shintaro Kaneko (http://kaneshinth.com)
 //
@@ -20,31 +20,34 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+#import "KLDResult.h"
 
-typedef NS_ENUM(NSUInteger, KLDSQLiteOpenFlags) {
-    KLDSQLiteOpenFlagReadonly   = 1 << 0,
-    KLDSQLiteOpenFlagReadWrite  = 1 << 1,
-    KLDSQLiteOpenFlagCreate     = 1 << 2,
-};
+@interface KLDResult ()
+@property (readwrite, nonatomic, strong) NSDictionary *record;
+@end
 
-@class KLDResultSet;
+@implementation KLDResult
++ (instancetype)resultWithRecord:(NSDictionary *)record
+{
+    return [[[self class] alloc] initWithRecord:record];
+}
 
-@interface KLDDatabase : NSObject
+- (instancetype)initWithRecord:(NSDictionary *)record
+{
+    self = [super init];
+    if (self) {
+        _record = [record copy];
+    }
+    return self;
+}
 
-+ (instancetype)databaseWithName:(NSString *)name;
-- (instancetype)initWithName:(NSString *)name;
+- (NSArray *)namesOfColumn
+{
+    return [[self.record keyEnumerator] allObjects];
+}
 
-- (BOOL)open;
-- (BOOL)openWithFlags:(KLDSQLiteOpenFlags)flags;
-
-- (BOOL)close;
-- (BOOL)remove;
-
-- (BOOL)isOpened;
-- (BOOL)isReadonly;
-- (BOOL)isWritable;
-
-- (KLDResultSet *)query:(NSString *)sql;
-
+- (id)objectForKey:(id)aKey
+{
+    return [self.record objectForKey:aKey];
+}
 @end

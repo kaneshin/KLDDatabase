@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface KLDViewController : UIViewController
+@interface KLDViewController : UITableViewController
 
 @end

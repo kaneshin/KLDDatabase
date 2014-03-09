@@ -1,4 +1,4 @@
-// KLDDatabase.h
+// KLDResultSet.m
 //
 // Copyright (c) 2014 Shintaro Kaneko (http://kaneshinth.com)
 //
@@ -20,31 +20,35 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
-#import <Foundation/Foundation.h>
+#import "KLDResultSet.h"
 
-typedef NS_ENUM(NSUInteger, KLDSQLiteOpenFlags) {
-    KLDSQLiteOpenFlagReadonly   = 1 << 0,
-    KLDSQLiteOpenFlagReadWrite  = 1 << 1,
-    KLDSQLiteOpenFlagCreate     = 1 << 2,
-};
+@interface KLDResultSet ()
+@property (readwrite, nonatomic, strong) NSArray *rows;
+@property (readwrite, nonatomic, strong) NSString *requestedQuery;
+@end
 
-@class KLDResultSet;
+@implementation KLDResultSet
++ (instancetype)resultWithRows:(NSArray *)rows
+{
+    return [[[self class] alloc] initWithRows:rows];
+}
 
-@interface KLDDatabase : NSObject
+- (instancetype)initWithRows:(NSArray *)rows
+{
+    self = [super init];
+    if (self) {
+        _rows = [rows copy];
+    }
+    return self;
+}
 
-+ (instancetype)databaseWithName:(NSString *)name;
-- (instancetype)initWithName:(NSString *)name;
+- (uint64_t)count
+{
+    return [self.rows count];
+}
 
-- (BOOL)open;
-- (BOOL)openWithFlags:(KLDSQLiteOpenFlags)flags;
-
-- (BOOL)close;
-- (BOOL)remove;
-
-- (BOOL)isOpened;
-- (BOOL)isReadonly;
-- (BOOL)isWritable;
-
-- (KLDResultSet *)query:(NSString *)sql;
-
+- (void)setExecutedQuery:(NSString *)query
+{
+    _requestedQuery = query;
+}
 @end
